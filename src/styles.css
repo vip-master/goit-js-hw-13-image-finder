@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 0px 35px 20px rgba(163, 160, 151, 1);
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+form {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input {
+    width: 90%;
+    height: 61px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    outline: none;
+    outline-color: transparent;
+    margin: 0 auto;
+    display: block;
+}
+
+input.alert {
+    width: calc(90% - 400px);
+    margin: 0;
+}
+
+ul {
+    width: 80vw;
+    margin: 20px auto;
+    list-style: none;
+}
+
+ul>li {
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0 70px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
