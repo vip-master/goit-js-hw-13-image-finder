@@ -31,10 +31,17 @@ module.exports = {
             },
 
             {
-                test: /\.(png|jpe?g|gif|eot|woff|ttf|svg|woff2)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',
+                },
+            },
+            {
+                test: /\.(woff|ttf|woff2|eot)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: 'fonts/[name].[ext]',
                 },
             },
             {
